@@ -72,6 +72,8 @@ prompt_segment() {
   [[ -n $3 ]] && echo -n $3
 }
 
+# Modify the prompt to add a new line after printing the directory
+# leaves a `>>> ` before requiring command 
 # End the prompt, closing any open segments
 prompt_end() {
   if [[ -n $CURRENT_BG ]]; then
